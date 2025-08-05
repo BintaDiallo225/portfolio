@@ -20,26 +20,26 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Fatoumata Binta DIALLO",
+  title: "Bonjour et bienvenue, je suis Binta",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Étudiante en MIAGE à l'université de Haute Alsace, passionnée par le développement web et la gestion de projets numériques, je participe actuellement à la conception de la Revue Guinéenne de Management (ReGuiMa), une plateforme scientifique développée avec React.js et Open Journal Systems. À travers ce projet, je combine mes compétences en développement, organisation de contenus académiques, et accessibilité numérique pour mettre en valeur la recherche en gestion en Guinée. Curieuse, investie et toujours prête à apprendre, je m'épanouis dans des projets concrets à fort impact."
   ),
+  // Utilise le lien de téléchargement direct via Google Drive (format "uc?export=download&id=")
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/uc?export=download&id=1eViPu3BWVvNd7DWD88Kbw2lkP13J84N1",
+  displayGreeting: true, // Pour afficher ou non cette section
 };
+
+export default greeting;
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+ 
+  linkedin: "www.linkedin.com/in/fatoumata-binta-diallo-989051338",
+  gmail: "fatoumatabintadiallo0901@gmail.com",
+
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,155 +48,117 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Mon parcours technique",
+  subTitle: "De la théorie à la pratique, j'ai transformé mes apprentissages en projets concrets et utiles.",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("📚 Formation solide en algorithmique et programmation orientée objet, renforcée par le développement d'une application de manipulation de graphes, et celle d'un robot parcourant un labyrinthe"),
+    emoji("💻 Maîtrise du développement web front-end avec React.js, illustrée par mes projets Délice Culinaire et My Burger."),
+    emoji("🛠 Expérience pratique en back-end avec Python/Django, notamment dans la création d'outils automatisés pour l'enseignement."),
+    emoji("🌐 Passionnée par les technologies open source, j'ai contribué à la mise en place d'un portail pour la revue scientifique ReGuiMa via Open Journal Systems."),
+    emoji("🚀 Habituée au déploiement rapide et à la gestion de versions avec Git, GitHub et Vercel."),
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
+    { skillName: "C++", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "React.js", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "Django", fontAwesomeClassname: "fas fa-server" },
+    { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true,
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Université de Haute-Alsace",
+      logo: require("./assets/images/logo-header-mobile.png"), // Remplace par le vrai logo UHA si tu l'as
+      subHeader: "Licence 3 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)",
+      duration: "Septembre 2024 - Mai 2025",
+      desc: "Formation pluridisciplinaire combinant informatique, gestion et analyse des systèmes d'information, avec des projets concrets en développement logiciel et gestion de bases de données.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Développement d'applications en Java, C++ et Python, incluant la manipulation de graphes et la programmation orientée objet",
+        "Conception et gestion de bases de données relationnelles avec MySQL",
+        "Gestion de projets informatiques en mode Agile et travail collaboratif en équipe",
+        
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Lycée Maarif",
+      logo: require("./assets/images/images.jpeg"), // À remplacer ou supprimer si tu préfères
+      subHeader: "Baccalauréat Scientifique Mathématiques",
+      duration: "Octobre 2019 - Juillet 2020",
+      desc: "Obtention du baccalauréat scientifique avec mention, base solide en mathématiques, sciences et informatique.",
+      descBullets: [
+        "Formation en mathématiques avancées et sciences physiques",
+        "Participation à des clubs scientifiques et ateliers numériques"
+      ]
     }
   ]
 };
-
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Frontend (HTML, CSS, JavaScript, React, Tailwind)",
+      progressPercentage: "60%"
     },
     {
-      Stack: "Backend",
+      Stack: "Backend (PHP, Node.js, Django)",
+      progressPercentage: "65%"
+    },
+    {
+      Stack: "Programmation (Python, Java, C++)",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "Base de données (MySQL, PostgreSQL)",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Automatisation & Intégration (n8n, API REST, Git)",
+      progressPercentage: "50%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Stagiaire Technico-commerciale",
+      company: "SAAR Assurances Sénégal",
+      companylogo: require("./assets/images/saar.jpeg"), // Ajoute ce logo dans assets/images
+      date: "Mai 2024 - Aout 2024",
+      desc: "Stage au sein du service commercial de SAAR Assurances, axé sur la prospection client, le conseil et le suivi des dossiers d'assurance.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Prospection de nouveaux clients et suivi commercial",
+        "Analyse des besoins en assurance des clients particuliers et entreprises",
+        "Rédaction de propositions commerciales et gestion de devis",
+        "Participation à des actions marketing et de fidélisation"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Développeuse Web Freelance",
+      company: "Association guinéenne des sciences de gestion",
+      date: "Juillet 2025 - Présent",
+      desc: "Création d'une plateforme scientifique pour l'association guinéenne des sciences de gestion en utilisant Open Journal Systems et développement d'un site vitrine pour la revue guinéenne de management (ReGuiMa).",
+      descBullets: [
+        "Installation et personnalisation d'OJS sur un serveur VPS",
+        "Création d'un site React.js connecté à OJS via une API",
+        "Configuration du workflow éditorial et des rôles dans OJS",
+        "Publication d'un numéro test et rédaction de la documentation"
+      ]
     }
   ]
 };
@@ -212,152 +174,106 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Mes Projets",
+  subtitle: "Projets personnels, universitaires et freelances que j'ai réalisés",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Application de manipulation de graphes",
+      projectDesc:
+        "Interface console en C++ permettant de manipuler et d'exécuter des algorithmes sur des graphes (Dijkstra, BFS, etc.).",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+         {
+          name: "Voir la demo",
+          url: "https://drive.google.com/file/d/1vXAAG_-F6zjbT824yyhETK-HMc6pHsAs/view?usp=sharing"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Correction automatique de devoirs",
+      projectDesc:
+        "Web app Django pour la correction semi-automatique de devoirs. Interface enseignant avec génération de statistiques.",
+      footerLink: []
+    },
+    {
+      projectName: "Robot autonome dans un labyrinthe",
+      projectDesc:
+        "Simulation en C++ d'un robot résolvant un labyrinthe avec détection d'obstacles. Interface console.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Voir le code",
+          url: "https://drive.google.com/file/d/1RC939YdokUL0PvFhJ-OUqxQ3KDCWNliX/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      projectName: "Délice Culinaire",
+      projectDesc:
+        "Site vitrine de recettes développé avec React et hébergé sur Vercel. Design responsive.",
+      footerLink: [
+        {
+          name: "Voir le site",
+          url: "https://delice-culinaire-ds7k.vercel.app/"
+        }
+      ]
+    },
+    {
+      projectName: "My Burger",
+      projectDesc:
+        "Application React pour composer et commander un burger personnalisé. Utilisation de composants dynamiques.",
+      footerLink: [
+        {
+          name: "Voir la site",
+          url: "https://my-burger-one.vercel.app/" 
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Certifications et Réalisations 🏆"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Certifications officielles obtenues via des plateformes reconnues comme Pix et Cisco Networking Academy.",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Certification Pix",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Certification officielle des compétences numériques (Pix), obtenue à l’université dans le cadre du programme national français.",
+      image: require("./assets/images/pix.png"),
+      imageAlt: "Logo Pix",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Voir la certification",
+          url: "https://drive.google.com/file/d/1KTyWO9ognpKz3V7U5gDnWp2_WKceNIDF/view?usp=sharing" // Remplace par le lien direct si tu en as un
+        }
+      ]
+    },
+    {
+      title: "Python Essentials 1",
+      subtitle:
+        "Formation et certification Python Essentials 1 délivrée par la Cisco Networking Academy.",
+      image: require("./assets/images/cisco.png"),
+      imageAlt: "Logo Cisco Networking Academy",
+      footerLink: [
+        {
+          name: "Voir la certification",
+          url: "https://drive.google.com/file/d/1mXa_25cjMv9MUx9a4yDAG0UJ0rXzRv6E/view?usp=sharing" // Mets le lien Credly ou PDF si tu l’as
         },
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Cisco Networking Academy",
+          url: "https://www.netacad.com/courses/python"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
 
 // Resume Section
 const resumeSection = {
@@ -369,19 +285,16 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contactez-moi ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Vous avez un projet à me confier, une opportunité à partager ou simplement envie d'échanger ? Je suis toujours ouverte aux nouvelles collaborations.",
+  number: "+33 6  ......", // Remplace par ton vrai numéro si tu veux l'afficher
+  email_address: "fatoumatabintadiallo0901@gmail.com" // Remplace par ton email pro
 };
 
 // Twitter Section
 
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
-};
+
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
@@ -397,11 +310,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
   contactInfo,
-  twitterDetails,
   isHireable,
   resumeSection
 };
