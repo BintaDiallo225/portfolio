@@ -27,7 +27,7 @@ const greeting = {
   ),
   // Utilise le lien de téléchargement direct via Google Drive (format "uc?export=download&id=")
   resumeLink:
-    "https://drive.google.com/uc?export=download&id=1eViPu3BWVvNd7DWD88Kbw2lkP13J84N1",
+    "https://drive.google.com/uc?export=download&id=1bn6Yv_9O4fJWdpauFhz72gNDUrTT6RFI",
   displayGreeting: true, // Pour afficher ou non cette section
 };
 
@@ -48,7 +48,7 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "Mon parcours technique",
+  title: "My Technical Background",
   subTitle: "De la théorie à la pratique, j'ai transformé mes apprentissages en projets concrets et utiles.",
   skills: [
     emoji("📚 Formation solide en algorithmique et programmation orientée objet, renforcée par le développement d'une application de manipulation de graphes, et celle d'un robot parcourant un labyrinthe"),
@@ -65,7 +65,6 @@ const skillsSection = {
     { skillName: "Django", fontAwesomeClassname: "fas fa-server" },
     { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
     { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
-    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
   ],
   display: true,
 };
@@ -174,7 +173,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Mes Projets",
+  title: "My Projects",
   subtitle: "Projets personnels, universitaires et freelances que j'ai réalisés",
   projects: [
     {
@@ -235,7 +234,7 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Certifications et Réalisations 🏆"),
+  title: emoji("My Achievements 🏆"),
   subtitle:
     "Certifications officielles obtenues via des plateformes reconnues comme Pix et Cisco Networking Academy.",
 
@@ -285,7 +284,7 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contactez-moi ☎️"),
+  title: emoji("Contact me ☎️"),
   subtitle:
     "Vous avez un projet à me confier, une opportunité à partager ou simplement envie d'échanger ? Je suis toujours ouverte aux nouvelles collaborations.",
   number: "+33 6  ......", // Remplace par ton vrai numéro si tu veux l'afficher

@@ -47,7 +47,7 @@ export default function Greeting() {
                     rel="noopener noreferrer"
                     className="download-link-button"
                   >
-                    <Button text="Télécharger mon CV" />
+                    <Button text="Download my Resume (PDF)" />
                   </a>
                 )}
               </div>
