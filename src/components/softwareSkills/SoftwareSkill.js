@@ -5,7 +5,7 @@ import {skillsSection} from "../../portfolio";
 export default function SoftwareSkill() {
   return (
     <div>
-      <div className="software-skills-main-div">
+      <div className="software-skills-main-div p-6">
         <ul className="dev-icons">
           {skillsSection.softwareSkills.map((skills, i) => {
             return (
